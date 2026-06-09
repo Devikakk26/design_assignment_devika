@@ -1,1 +1,4 @@
+A BCD (Binary Coded Decimal) Adder is a combinational circuit used to add two BCD digits along with an optional carry input and produce a valid BCD output. The design performs an initial 4-bit binary addition and applies correction logic whenever the resulting sum exceeds the valid BCD range (0–9) or generates a carry. In such cases, the value 0110 is added to obtain the correct BCD representation. The circuit is implemented in Verilog HDL using Full Adders and a Ripple Carry Adder (RCA), and its functionality is verified through simulation in Vivado. The simulation waveforms confirm the correct generation of BCD sums and carry outputs for various input combinations.
+SIMULATION OUTPUT
+<img width="1493" height="846" alt="Screenshot 2026-06-09 223108" src="https://github.com/user-attachments/assets/24d63620-0c3b-4f93-babd-41f5e5ede879" />
 
