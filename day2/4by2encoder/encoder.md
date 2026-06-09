@@ -1,0 +1,4 @@
+
+A 4-to-2 Encoder is a combinational logic circuit that converts one of four active input lines into a 2-bit binary code at the output. The encoder assumes that only one input is active at a time and generates the corresponding binary representation of the active input. For example, if input (I_2) is high, the output will be (10), and if (I_3) is high, the output will be (11). The circuit reduces the number of bits required to represent multiple input lines, making it useful in digital systems for data encoding and signal processing. The design is implemented in Verilog HDL and verified through simulation in Vivado, confirming the correct binary output for different input combinations.
+
+<img width="1545" height="908" alt="image" src="https://github.com/user-attachments/assets/49765660-c31b-4ade-b40c-7dc80ee76ffb" />
