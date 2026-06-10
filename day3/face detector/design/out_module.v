@@ -1,7 +1,6 @@
-module out_module(input clk, rst,output reg rd_enb
+module out_module(input clk,rst,input [7:0] din,output reg rd_enb,output reg [7:0] dout
 );
-
-parameter S0 = 2'b00;
+ parameter S0 = 2'b00;
 parameter S1 = 2'b01;
 parameter S2 = 2'b10;
 reg [1:0] state;
@@ -11,8 +10,9 @@ if(rst)
 begin
 state <= S0;
 rd_enb <= 1'b0;
+dout <= 8'h00;
 end
- else
+else
 begin
 case(state)
 S0:
@@ -20,21 +20,25 @@ begin
 rd_enb <= 1'b0;
 state <= S1;
 end
- S1:
- begin
+S1:
+begin
 rd_enb <= 1'b0;
 state <= S2;
- end
+end
 S2:
 begin
 rd_enb <= 1'b1;
+dout <= din;
 state <= S0;
 end
 default:
- begin
+begin
 rd_enb <= 1'b0;
 state <= S0;
- end
-endcase
 end
+endcase
+ end
+end
+endmodule
+endmodule
 end
