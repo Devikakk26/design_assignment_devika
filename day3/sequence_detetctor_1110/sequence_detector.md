@@ -1,0 +1,4 @@
+
+A Sequence Detector is a sequential circuit designed to identify a specific pattern of bits in a serial input stream. This implementation detects the sequence **1110** and generates an output whenever the complete pattern is received. The circuit continuously monitors the incoming bits and transitions through different states based on the input sequence. Upon detecting the pattern **1110**, the output is asserted, indicating successful detection of the desired sequence. The design is implemented as a Finite State Machine (FSM) in Verilog HDL and verified through simulation in Vivado, demonstrating accurate sequence recognition and proper state transitions for various input combinations.
+
+<img width="1550" height="783" alt="Screenshot 2026-06-10 203220" src="https://github.com/user-attachments/assets/ffc950fe-31ee-43aa-ae6e-7655cbfffdce" />
