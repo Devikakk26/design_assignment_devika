@@ -310,3 +310,9 @@ Power analysis was performed at post-implementation with vectorless (default) sw
 - Run the Fmax sweep (tighten timing_constraints.xdc period from 10 ns down in 0.1-0.2 ns steps, re-running implementation each time) to find and report the verified maximum operating frequency. Current estimated Fmax is ~276 MHz based on post-implementation critical path delay of 3.619 ns.
 
 - Wrap the interface in a standard streaming protocol (AXI-Stream or similar) to reduce I/O pin count from the current 384+ exposed data bits to a practical narrow interface suitable for board-level integration.
+- Befor modification
+- <img width="1600" height="689" alt="WhatsApp Image 2026-06-23 at 12 42 58" src="https://github.com/user-attachments/assets/94ee3990-ff96-400a-85b6-d19380702e9c" />
+after modification
+<img width="1600" height="758" alt="WhatsApp Image 2026-06-23 at 11 56 02" src="https://github.com/user-attachments/assets/8ef4983d-f68d-4116-ad18-5b7ce0c67a1e" />
+
+
